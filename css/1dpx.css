@@ -1,0 +1,181 @@
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.940);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    z-index: 9999;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+#overlay.hidden {
+    opacity: 0;
+}
+
+.full-screen-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure video is behind everything */
+    pointer-events: none; /* Make sure the video doesn't interfere with clicks */
+}
+
+.diamond {
+    width: 22px;
+    height: 23px;
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 5px white);
+}
+
+.verified-badge {
+    width: 22px;
+    height: 23px;
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 10px white);
+}
+
+.logo-badge {
+    width: 31px;
+    height: 34px;
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 10px white);
+}
+
+.owner-badge {
+    width: 22px;
+    height: 23px;
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 10px white);
+}
+
+.booster-badge {
+    width: 22px;
+    height: 23px;
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 10px white);
+}
+
+.connections-badge {
+    width: 22px;
+    height: 23px;
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 10px white);
+}
+
+.staff-badge {
+    width: 23px;
+    height: 23px;
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 10px white);
+}
+
+.diamond-shadow {
+    filter: drop-shadow(0 0 1.5px #ffffff) !important;
+    fill: #ffffff !important;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.username {
+    position: relative;
+    display: flex;
+    top: -8em;
+    left: -8em;
+    text-align: left;
+    justify-content: center;
+    align-items: left;
+}
+
+.username a {
+    font-weight: 600;
+    margin-top: 0.5%;
+    font-size: 32px;
+    color: #f7f7f7;
+    text-shadow: 0px 0px 16.5px #f7f7f7;
+}
+
+@media (max-width: 768px) {
+    .username a {
+        top: 1em; /* Move user up for smaller screens */
+        left: 3.31em; /* Move user up for smaller screens */
+    }
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+.profile-view-count {
+    text-align: center;
+    color: #fff;
+    align-items: center;
+}
+
+.eye-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.sparkles {
+    background-image: url('../images/white.gif');
+    position: relative;
+    display: inline-block;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 5px;
+}
+.video-background {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -1; /* Places the video behind other content */
+}
